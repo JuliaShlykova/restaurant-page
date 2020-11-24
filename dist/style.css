@@ -1,0 +1,79 @@
+body{
+    background-color: #ffddb8;
+}
+#content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#main-image{
+    background-image: url(pictures/restaurant-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 80vw;
+    height: 200px;
+    text-align: center;
+}
+#main-image>p{
+    font-size: 100px;
+    color: #ffddb8;
+    text-shadow: 2px 2px 0 #b5320b, -2px -2px 0 #b5320b;
+    font-weight: bold;
+    font-style: italic;
+}
+#tab-content{
+    margin: 40px 0;
+    width: 50%;
+    text-align: center;
+    font-size: 30px;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    width: 60vw;
+    justify-content: space-around;
+}
+nav>button{
+    width:200px;
+    height: 100px;
+    background-color: #b5320b;
+    color:#ffddb8;
+    font-size: 40px;
+    border: 1px solid #ffddb8;
+}
+.activeTab{
+    color: #b5320b;
+    background-color:#ffddb8;
+    font-weight: bold;
+    border: 1px solid #b5320b;
+}
+nav>button:hover{
+    cursor: pointer;
+    box-shadow: 0 0 20px #b5320b;
+    font-weight: bold;
+}
+nav>button:focus{
+    outline: none;
+}
+.activeTab:hover{
+    box-shadow: none;
+}
+@media(max-width:700px){
+    #main-image{
+        width:100vw;
+    }
+    #description{
+        width: 100%;
+    }
+    nav>button{
+        width:100px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+}
+@media(min-height:500px){
+    #main-image{
+        height: 400px;
+    }
+}
